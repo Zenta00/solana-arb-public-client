@@ -1,0 +1,6 @@
+pub mod fee_tracker;
+
+
+pub const DEFAULT_FIXED_TIP_AMOUNT: u64 = 20;
+pub const DEFAULT_RANDOM_TIP_AMOUNT_LOWER_BOUND: u64 = 10;
+pub const DEFAULT_RANDOM_TIP_AMOUNT_UPPER_BOUND: u64 = 90;

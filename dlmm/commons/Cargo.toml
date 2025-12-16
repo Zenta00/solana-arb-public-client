@@ -1,0 +1,15 @@
+[package]
+name = "commons"
+version = "0.3.0"
+edition = "2021"
+description = "Common libraries for DLMM"
+authors = ["tian <tian@racoons.dev>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { workspace = true }
+lb_clmm = { path = "../lb_clmm", features = ["cpi"] }
+tokio = { workspace = true, features = ["full", "parking_lot"] }
+bincode = { workspace = true }
+solana-program = "2.3.0"

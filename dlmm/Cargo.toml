@@ -1,0 +1,20 @@
+[package]
+name = "dlmm" 
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lb_clmm = { path = "./lb_clmm" }
+commons = { path = "./commons" }
+meteora = { path = "./meteora" }
+solana-client = {path = "../client", version = "=2.3.0"}
+solana-program = "2.3.0"
+bytemuck = {workspace = true}
+anyhow = {workspace = true}
+num_enum = {workspace = true}
+tokio = {workspace = true}
+borsh = {workspace = true}
+uint = {workspace = true}
+ruint = {workspace = true}
+num-traits = {workspace = true}
+num-integer = "0.1.45"

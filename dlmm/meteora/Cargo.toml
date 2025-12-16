@@ -1,0 +1,19 @@
+[package]
+name = "meteora"
+version = "1.0.0"
+edition = "2021"
+description = "Meteora"
+authors = ["tian <tian@racoons.dev>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+commons = { path = "../commons" }
+lb_clmm = { path = "../lb_clmm", features = ["cpi"] }
+anyhow = { workspace = true }
+solana-client = {workspace = true}
+solana-sdk = "2.3.0"
+solana-program = "2.3.0"
+log = "0.4.20"
+[dev-dependencies]
+proptest = "1.2.0"

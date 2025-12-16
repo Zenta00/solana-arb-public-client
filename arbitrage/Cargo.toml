@@ -1,0 +1,66 @@
+[package]
+name = "arbitrage"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+
+
+[dependencies]
+argmin = "0.10.0"
+bincode = { workspace = true }
+chrono= "0.4"
+solana-account = { workspace = true}
+solana-address-lookup-table-interface = "2.2.2"
+solana-connection-cache = { workspace = true }
+solana-sdk = "2.3.0"
+solana-rpc = {workspace = true}
+solana-ledger = {workspace = true}
+solana-svm = {workspace = true}
+solana-client = {workspace = true}
+solana-rpc-client-api = {workspace = true}
+solana-runtime = { workspace = true}
+solana-net-utils = {workspace = true}
+solana-tls-utils = { workspace = true }
+solana-streamer = {workspace = true}
+solana-quic-client = {workspace = true}
+solana-transaction-status-client-types = {workspace = true}
+spl-token-2022 = {workspace = true}
+spl-token = { workspace = true}
+quinn = {workspace = true}
+itertools = "0.10.5"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+bs58 = "0.4.0"
+crossbeam-channel = "0.5.13"
+lb_clmm = { path="../dlmm/lb_clmm", version = "=0.8.0" }
+base64 = "0.22.1"
+spl-associated-token-account = {workspace = true}
+borsh = { version = "1.5.1", features = ["derive", "unstable__schema"] }
+meteora = { path="../dlmm/meteora", version = "=1.0.0" }
+tokio = {workspace = true}
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+tracing-appender = "0.2.3"
+rand = {workspace = true}
+log = {workspace = true}
+solana-send-transaction-service = {workspace = true}
+solana-transaction-status = { workspace = true }
+lazy_static = "1.4.0"
+rustls = {workspace = true}
+rcgen = "0.8"
+futures = {workspace = true}
+anyhow = {workspace = true}
+ureq = {version = "2.10.1", features = ["json"]}
+uint = "0.8.5"
+scopeguard = "1.2.0"
+bimap = {workspace = true}
+thiserror = {workspace = true}
+
+[dev-dependencies]
+env_logger = "0.11"
+solana-rpc-client-api = {workspace = true}
+solana-account-decoder = { workspace = true }
