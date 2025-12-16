@@ -24,6 +24,12 @@ log-*/
 !log-utils/
 arbitrage/logs/
 
+# keypairs / secrets (never commit)
+validator-keypair.json
+**/*keypair*.json
+**/*.keypair
+**/*.seed
+
 # intellij files
 .idea/
 /solana.iml
